@@ -1,0 +1,28 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <title>Document</title>
+
+
+    
+</head>
+<body>
+    {% block header %} {% endblock %}
+    <h1>CRUD FLASK</h1>
+
+    {% for item in rows %}
+
+    <h1>UserName: {{item[1]}}</h1>
+    <h1>ParentsName: {{item[4]}}</h1>
+{% endfor %}
+
+    
+</body>
+</html>
